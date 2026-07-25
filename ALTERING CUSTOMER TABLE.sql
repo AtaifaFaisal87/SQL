@@ -1,0 +1,23 @@
+ALTER TABLE Customers
+ADD COLUMN Age INT;
+
+ALTER TABLE Customers
+ADD COLUMN Status VARCHAR(20) DEFAULT 'Active';
+
+ALTER TABLE Customers
+MODIFY PHONE VARCHAR(20);
+
+ALTER TABLE Customers
+RENAME COLUMN NAME TO Customer_Name;
+
+ALTER TABLE Customers
+ADD CONSTRAINT unique_phone
+UNIQUE(PHONE);
+
+ALTER TABLE Customers
+DROP COLUMN Age;
+
+SELECT *FROM Customers
+
+
+
