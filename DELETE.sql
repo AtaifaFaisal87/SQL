@@ -1,0 +1,6 @@
+
+DELETE FROM Employees
+WHERE ID = 3;
+
+DELETE FROM Employees
+WHERE ID IN (4, 5);
