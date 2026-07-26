@@ -1,0 +1,9 @@
+SELECT *FROM Employees;
+
+-- AUTO COMMIT OFF
+SET autocommit=0;
+
+-- DELETE FROM Employees WHERE ID=2;
+ROLLBACK; -- TO GO BACK ONE QUERY
+COMMIT; -- TO FINALLY CONFIRM THE CHANGE
+-- SET autocommit=1; to turn it on
